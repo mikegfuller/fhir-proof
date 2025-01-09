@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    database: mike_fuller_demo
+    schema: hcls
+    tables:
+      - name: patient_records
+        description: Raw FHIR JSON records
+        columns:
+          - name: record_id
+            description: Unique identifier for the FHIR record
+            tests:
+              - unique
+              - not_null
