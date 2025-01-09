@@ -1,0 +1,73 @@
+version: 2
+
+models:
+  - name: stg_immunizations
+    description: Staging model for immunization records
+    columns:
+      - name: immunization_id
+        description: Unique identifier for the immunization record
+        tests:
+          - unique
+          - not_null
+      - name: patient_id
+        description: Reference to the patient
+        tests:
+          - not_null
+
+  - name: stg_observations
+    description: Staging model for observation records
+    columns:
+      - name: observation_id
+        description: Unique identifier for the observation
+        tests:
+          - unique
+          - not_null
+      - name: patient_id
+        description: Reference to the patient
+        tests:
+          - not_null
+
+  - name: stg_diagnostic_reports
+    description: Staging model for diagnostic reports
+    columns:
+      - name: diagnostic_report_id
+        description: Unique identifier for the diagnostic report
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_care_plans
+    description: Staging model for care plans
+    columns:
+      - name: care_plan_id
+        description: Unique identifier for the care plan
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_procedures
+    description: Staging model for procedures
+    columns:
+      - name: procedure_id
+        description: Unique identifier for the procedure
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_coverage
+    description: Staging model for coverage
+    columns:
+      - name: coverage_id
+        description: Unique identifier for the coverage
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_document_references
+    description: Staging model for document references
+    columns:
+      - name: document_reference_id
+        description: Unique identifier for the document reference
+        tests:
+          - unique
+          - not_null

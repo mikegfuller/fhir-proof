@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fct_coverage
+    description: Fact table for coverage
+    columns:
+      - name: coverage_id
+        description: Primary key for the coverage
+        tests:
+          - unique
+          - not_null

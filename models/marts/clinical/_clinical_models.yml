@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: fct_immunizations
+    description: Fact table for immunizations
+    columns:
+      - name: immunization_id
+        description: Primary key for the immunization
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_observations
+    description: Fact table for observations
+    columns:
+      - name: observation_id
+        description: Primary key for the observation
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_procedures
+    description: Fact table for procedures
+    columns:
+      - name: procedure_id
+        description: Primary key for the procedure
+        tests:
+          - unique
+          - not_null
