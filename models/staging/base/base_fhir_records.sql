@@ -12,4 +12,4 @@ select
     created_at,
     filename,
     file_row_number
-from {{ source('raw', 'fhir_data') }}
+from {{ source('raw', 'patient_records') }}

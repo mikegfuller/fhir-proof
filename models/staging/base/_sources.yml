@@ -2,10 +2,10 @@ version: 2
 
 sources:
   - name: raw
-    database: your_database
-    schema: your_schema
+    database: mike_fuller_demo
+    schema: hcls
     tables:
-      - name: fhir_data
+      - name: patient_records
         description: Raw FHIR JSON records
         columns:
           - name: record_id
